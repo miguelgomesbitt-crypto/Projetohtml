@@ -1,0 +1,156 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+.subtitle,
+.menu-superior a {
+    font-family: 'Permanent Marker', cursive;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu-superior {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.menu-superior ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-superior li a {
+    margin-left: 20px;
+    color: #555;
+    padding: 5px 10px;
+}
+
+.menu-superior li a:hover {
+    color: #000;
+}
+
+.container-central {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+}
+
+.sketch-background {
+    background-color: #ecf0e6;
+    border: 2px dashed #a4c6a4;
+    width: 80%;
+    margin: 0 auto;
+    height: 60vh;
+}
+
+.container-projetos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 80px 20px 20px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.grid-projetos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+}
+
+.projeto-card {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.projeto-card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007bff;
+    border-bottom: 1px dashed;
+}
+
+.cor-projeto-1 {
+    background-color: #fffacd;
+}
+
+.cor-projeto-2 {
+    background-color: #e0f7fa;
+}
+
+.cor-projeto-3 {
+    background-color: #ffe0b2;
+}
+
+.cor-projeto-4 {
+    background-color: #d1c4e9;
+}
+
+.container-sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 80px 20px 20px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.sobre-conteudo {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.secao {
+    flex-basis: 45%;
+    border-bottom: 2px dashed #ccc;
+    padding-bottom: 15px;
+}
+
+.social-links a {
+    display: block;
+    margin-top: 5px;
+    color: #007bff;
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+
+    .grid-projetos,
+    .sobre-conteudo {
+        grid-template-columns: 1fr;
+        flex-direction: column;
+    }
+
+    .secao {
+        margin-bottom: 20px;
+    }
+}
